@@ -24,8 +24,10 @@ body {
   box-shadow: 0 2px 12px #fda08533;
   border-bottom: 2px solid #fda085;
   z-index: 2000;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
 }
