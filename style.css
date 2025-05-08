@@ -1,6 +1,6 @@
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
-  background: linear-gradient(135deg, #fffbe7 0%, #f6d365 30%, #fda085 70%, #fbc2eb 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #f8f8f8 50%, #f0f0f0 100%);
   min-height: 100vh;
   position: relative;
   overflow-x: hidden;
@@ -12,18 +12,18 @@ body {
   z-index: 0;
   pointer-events: none;
   background:
-    radial-gradient(circle at 10% 20%, rgba(255, 224, 102, 0.15) 0%, transparent 50%),
-    radial-gradient(circle at 90% 30%, rgba(253, 160, 133, 0.12) 0%, transparent 50%),
-    radial-gradient(circle at 20% 80%, rgba(251, 194, 235, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 80% 70%, rgba(161, 196, 253, 0.1) 0%, transparent 50%),
-    repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.05) 0px, rgba(255, 255, 255, 0.05) 1px, transparent 1px, transparent 10px);
+    radial-gradient(circle at 10% 20%, rgba(220, 53, 69, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 90% 30%, rgba(220, 53, 69, 0.06) 0%, transparent 50%),
+    radial-gradient(circle at 20% 80%, rgba(33, 37, 41, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(33, 37, 41, 0.05) 0%, transparent 50%),
+    repeating-linear-gradient(45deg, rgba(220, 53, 69, 0.03) 0px, rgba(220, 53, 69, 0.03) 1px, transparent 1px, transparent 10px);
   opacity: 0.8;
   filter: blur(1px);
 }
 .custom-navbar {
-  background: #fffbe7;
-  box-shadow: 0 2px 12px #fda08533;
-  border-bottom: 2px solid #fda085;
+  background: #ffffff;
+  box-shadow: 0 2px 12px rgba(33, 37, 41, 0.1);
+  border-bottom: 2px solid #dc3545;
   z-index: 2000;
   position: fixed;
   top: 0;
@@ -33,12 +33,12 @@ body {
   padding-bottom: 0.3rem;
 }
 .custom-navbar .navbar-brand {
-  color: #d7263d !important;
+  color: #dc3545 !important;
   background: none;
   font-size: 2rem;
   font-weight: 900;
   letter-spacing: 1.5px;
-  text-shadow: 0 2px 8px #fffbe7, 0 1px 0 #fffbe7;
+  text-shadow: 0 2px 8px #ffffff, 0 1px 0 #ffffff;
   padding-right: 0.5em;
   padding-left: 0.2em;
   border-radius: 0.5em;
@@ -49,22 +49,22 @@ body {
 }
 .custom-navbar .navbar-brand:hover {
   transform: none;
-  text-shadow: 0 2px 8px #fffbe7, 0 1px 0 #fffbe7;
+  text-shadow: 0 2px 8px #ffffff, 0 1px 0 #ffffff;
 }
 .custom-navbar .navbar-brand .bi {
   font-size: 1.5em;
-  color: #fda085;
+  color: #dc3545;
 }
 .custom-navbar #cartBtn {
-  background: #fda085;
-  color: #fffbe7;
+  background: #dc3545;
+  color: #ffffff;
   border: none;
   font-weight: 700;
-  box-shadow: 0 2px 8px #fda08522;
+  box-shadow: 0 2px 8px rgba(220, 53, 69, 0.2);
 }
 .custom-navbar #cartBtn:hover, .custom-navbar #cartBtn:focus {
-  background: #d7263d;
-  color: #fffbe7;
+  background: #212529;
+  color: #ffffff;
 }
 #cartBtn {
   font-weight: 600;
@@ -72,8 +72,8 @@ body {
   transition: background 0.2s, box-shadow 0.2s;
 }
 #cartBtn:hover, #cartBtn:focus {
-  background: #ffe066;
-  box-shadow: 0 2px 12px #ffb34744;
+  background: #212529;
+  box-shadow: 0 2px 12px rgba(33, 37, 41, 0.2);
 }
 #cartCount {
   font-size: 0.9rem;
@@ -81,8 +81,8 @@ body {
 }
 #cartModal .modal-content {
   border-radius: 1.5rem;
-  background: #fffbe7;
-  box-shadow: 0 8px 32px #ffb34733;
+  background: #ffffff;
+  box-shadow: 0 8px 32px rgba(33, 37, 41, 0.1);
 }
 #cartItems {
   min-height: 100px;
@@ -92,7 +92,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 0;
-  border-bottom: 1px solid #ffe066;
+  border-bottom: 1px solid #dc3545;
 }
 .cart-item-row:last-child {
   border-bottom: none;
@@ -105,81 +105,82 @@ body {
   margin: 0 0.5rem;
 }
 .remove-cart-item {
-  color: #d7263d;
+  color: #dc3545;
   cursor: pointer;
   font-size: 1.2rem;
   margin-left: 1rem;
   transition: color 0.2s;
 }
 .remove-cart-item:hover {
-  color: #a71d2a;
+  color: #212529;
 }
 .hero {
-  background: linear-gradient(135deg, #ffe066 0%, #ffb347 100%);
+  background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+  color: #ffffff;
 }
 .about img {
-  border: 5px solid #ffb347;
+  border: 5px solid #dc3545;
 }
 #nonveg-pickles, #veg-pickles {
-  background: linear-gradient(90deg, #fffbe7 0%, #ffe066 100%);
+  background: linear-gradient(90deg, #ffffff 0%, #f8f8f8 100%);
 }
 #nonveg-pickles {
-  border-top: 4px solid #d7263d;
+  border-top: 4px solid #dc3545;
 }
 #veg-pickles {
-  border-top: 4px solid #388e3c;
+  border-top: 4px solid #212529;
 }
 .card {
   transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
   cursor: pointer;
-  background: #fffbe7;
+  background: #ffffff;
   border-radius: 1rem;
-  box-shadow: 0 2px 12px rgba(255, 179, 71, 0.08);
+  box-shadow: 0 2px 12px rgba(33, 37, 41, 0.08);
 }
 .card-flip {
   transform: scale(1.04) rotateY(6deg);
-  box-shadow: 0 8px 32px rgba(255, 179, 71, 0.18);
-  background: #fffde4;
+  box-shadow: 0 8px 32px rgba(33, 37, 41, 0.15);
+  background: #ffffff;
 }
 .card-active {
-  box-shadow: 0 0 0 4px #ffe066;
+  box-shadow: 0 0 0 4px #dc3545;
 }
 .veg-card {
-  border-left: 6px solid #388e3c;
+  border-left: 6px solid #212529;
 }
 .nonveg-card {
-  border-left: 6px solid #d7263d;
+  border-left: 6px solid #dc3545;
 }
 .btn-danger {
-  background-color: #d7263d;
+  background-color: #dc3545;
   border: none;
 }
 .btn-danger:hover {
-  background-color: #a71d2a;
+  background-color: #c82333;
 }
 .btn-success {
-  background-color: #388e3c;
+  background-color: #212529;
   border: none;
 }
 .btn-success:hover {
-  background-color: #256029;
+  background-color: #1a1e21;
 }
 .contact-btn {
   transition: transform 0.15s, box-shadow 0.15s;
   font-size: 1.1rem;
-  box-shadow: 0 2px 8px #a1c4fd22;
+  box-shadow: 0 2px 8px rgba(33, 37, 41, 0.1);
 }
 .contact-btn:hover, .contact-btn:focus {
   transform: scale(1.07) translateY(-2px);
-  box-shadow: 0 4px 16px #fda08544;
+  box-shadow: 0 4px 16px rgba(220, 53, 69, 0.2);
   z-index: 1;
 }
 .copy-contact-btn {
   transition: background 0.15s, color 0.15s;
 }
 .copy-contact-btn:active {
-  background: #ffe066;
-  color: #d7263d;
+  background: #dc3545;
+  color: #ffffff;
 }
 .contact-method {
   display: flex;
@@ -194,6 +195,7 @@ body {
   font-size: 1.1em;
   letter-spacing: 0.5px;
   transition: opacity 0.2s;
+  color: #dc3545;
 }
 section, .navbar, .modal-content {
   position: relative;
