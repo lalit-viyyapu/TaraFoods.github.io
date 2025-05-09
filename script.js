@@ -1,4 +1,4 @@
-// List of pickles with placeholders and type
+// List of pickles with type
 const pickles = [
   { name: 'Chicken Pickle', price: 1500, desc: 'A spicy and flavorful chicken pickle.', available: true, type: 'nonveg' },
   { name: 'Mutton Pickle', price: 2000, desc: 'Tender mutton pieces in aromatic spices.', available: true, type: 'nonveg' },
