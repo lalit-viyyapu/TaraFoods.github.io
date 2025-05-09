@@ -66,13 +66,23 @@ body {
   color: #ffffff;
 }
 #cartBtn {
+  top: 20px;
+  right: 20px;
+  z-index: 2000;
+  background: #333131;
+  color: #ffffff;
+  border: none;
   font-weight: 600;
+  padding: 0.8rem 1.5rem;
   border-radius: 2rem;
-  transition: background 0.2s, box-shadow 0.2s;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
-#cartBtn:hover, #cartBtn:focus {
-  background: #212529;
-  box-shadow: 0 2px 12px rgba(33, 37, 41, 0.2);
+#cartBtn:hover {
+  background: #ffffff;
+  color: #333131;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 #cartCount {
   font-size: 0.9rem;
@@ -120,17 +130,21 @@ body {
   position: relative;
 }
 .hero .brand-name {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: 900;
   color: #ffffff;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  text-shadow: 2px 2px 4px #ca0101;
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  background: #cb0000;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 .hero .brand-name .bi {
-  font-size: 1.8rem;
-  color: #ffffff;
+  font-size: 2.2rem;
+  color: #dc3545;
 }
 .hero #cartBtn {
   background: rgba(255, 255, 255, 0.9);
