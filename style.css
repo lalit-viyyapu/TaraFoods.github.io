@@ -1,10 +1,9 @@
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
-  background: linear-gradient(135deg, #ffffff 0%, #f8f8f8 50%, #f0f0f0 100%);
+  background: linear-gradient(135deg, #333131 0%, #333131 50%, #333131 100%);
   min-height: 100vh;
   position: relative;
   overflow-x: hidden;
-  padding-top: 70px;
 }
 .background-decor {
   position: fixed;
@@ -33,7 +32,7 @@ body {
   padding-bottom: 0.3rem;
 }
 .custom-navbar .navbar-brand {
-  color: #dc3545 !important;
+  color: #303030 !important;
   background: none;
   font-size: 2rem;
   font-weight: 900;
@@ -101,7 +100,7 @@ body {
   width: 60px;
   text-align: center;
   border-radius: 0.5rem;
-  border: 1px solid #ffb347;
+  border: 1px solid #d11818;
   margin: 0 0.5rem;
 }
 .remove-cart-item {
@@ -115,41 +114,132 @@ body {
   color: #212529;
 }
 .hero {
-  background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+  background: linear-gradient(135deg, #b20000 0%, #b20000 100%);
   color: #ffffff;
+  padding: 3rem 0;
+  position: relative;
+}
+.hero .brand-name {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #ffffff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.hero .brand-name .bi {
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+.hero #cartBtn {
+  background: rgba(255, 255, 255, 0.9);
+  color: #000000;
+  border: none;
+  font-weight: 600;
+  padding: 0.8rem 1.5rem;
+  border-radius: 2rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.hero #cartBtn:hover {
+  background: #ffffff;
+  color: #000000;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.hero .btn-light {
+  background: rgba(255, 255, 255, 0.9);
+  color: #000000;
+  border: none;
+  font-weight: 600;
+  padding: 0.8rem 2rem;
+  border-radius: 2rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.hero .btn-light:hover {
+  background: #ffffff;
+  color: #000000;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 .about img {
   border: 5px solid #dc3545;
 }
 #nonveg-pickles, #veg-pickles {
-  background: linear-gradient(90deg, #ffffff 0%, #f8f8f8 100%);
+  background: linear-gradient(90deg, #ffffff 0%, #ffffff 100%);
 }
 #nonveg-pickles {
   border-top: 4px solid #dc3545;
 }
 #veg-pickles {
-  border-top: 4px solid #212529;
+  border-top: 4px solid #19ba03;
 }
 .card {
-  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s, color 0.3s;
   cursor: pointer;
-  background: #ffffff;
+  background: #333131;
   border-radius: 1rem;
-  box-shadow: 0 2px 12px rgba(33, 37, 41, 0.08);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+}
+.card:hover {
+  background: #ffffff;
+  color: #333131;
 }
 .card-flip {
   transform: scale(1.04) rotateY(6deg);
-  box-shadow: 0 8px 32px rgba(33, 37, 41, 0.15);
-  background: #ffffff;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
 }
 .card-active {
   box-shadow: 0 0 0 4px #dc3545;
 }
 .veg-card {
-  border-left: 6px solid #212529;
+  border-left: 6px solid #19ba03;
 }
 .nonveg-card {
   border-left: 6px solid #dc3545;
+}
+.card .card-title {
+  color: inherit;
+}
+.card .card-text {
+  color: inherit;
+}
+.card .fw-bold {
+  color: inherit;
+}
+.card .input-group-text {
+  background: #333131;
+  color: #ffffff;
+  border-color: #dc3545;
+}
+.card:hover .input-group-text {
+  background: #ffffff;
+  color: #333131;
+}
+.card .form-control {
+  background: #333131;
+  color: #ffffff;
+  border-color: #dc3545;
+}
+.card:hover .form-control {
+  background: #ffffff;
+  color: #333131;
+}
+.card .btn-success {
+  background: #dc3545;
+  color: #ffffff;
+  border: none;
+}
+.card:hover .btn-success {
+  background: #dc3545;
+  color: #ffffff;
+}
+.card .btn-success:hover {
+  background: #b20000;
+  color: #ffffff;
 }
 .btn-danger {
   background-color: #dc3545;
@@ -201,4 +291,21 @@ section, .navbar, .modal-content {
   position: relative;
   z-index: 1;
   background: none;
+}
+.btn-whatsapp {
+  background-color: #25D366;
+  color: #ffffff;
+  border: none;
+}
+.btn-whatsapp:hover {
+  background-color: #128C7E;
+  color: #ffffff;
+}
+.contact-btn.whatsapp-btn {
+  background: #25D366;
+  color: #ffffff;
+}
+.contact-btn.whatsapp-btn:hover {
+  background: #128C7E;
+  color: #ffffff;
 } 
